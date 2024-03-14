@@ -1,0 +1,19 @@
+# Sitewide Alert Component
+init:
+  version: VERSION
+  js:
+    js/init.js: { attributes: { defer: true } }
+  css:
+    theme:
+      css/sitewide_alert.css: { attributes: { defer: true } }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+form:
+  version: VERSION
+  js:
+    js/sitewide-alert-form.js: {}
+  dependencies:
+    - core/drupal.form

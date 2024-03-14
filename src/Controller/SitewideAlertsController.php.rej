@@ -1,0 +1,11 @@
+--- src/Controller/SitewideAlertsController.php
++++ src/Controller/SitewideAlertsController.php
+@@ -78,6 +78,8 @@ class SitewideAlertsController extends ControllerBase {
+         'styleClass' => $sitewideAlert->getStyleClass(),
+         'showOnPages' => $sitewideAlert->getPagesToShowOn(),
+         'negateShowOnPages' => $sitewideAlert->shouldNegatePagesToShowOn(),
++        'showAlertIcon' => $sitewideAlert->show_alert_icon->value,
++
+       ];
+     }
+ 
